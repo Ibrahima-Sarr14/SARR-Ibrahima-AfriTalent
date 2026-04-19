@@ -8,8 +8,95 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <-!-- Le contenu de al page sera ajouté ici -->
-    <script src="htpps://cdn.jsdelivr.net/npm/bootstra@5.3.0/dist/css/bootstrap.min.css"></script>
-    <script src="js/main.js"></script>
+    <!-- Navigation Bootstrap commune à toutes les pages -!>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AfriTalent</a>
+            <button class= "navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <--!Contenu principal!-->
+    <main>
+
+        <!--Section Hero : accroche principale-->
+    <section id="hero">
+         <div class="container py-5">
+            <h1>Trouvez le talent africain qu'il vous fait</h1>
+            <p>Afritalent connecte les freelances africains aux clients du monde entier.</p>
+            <a href="freelances.html" class="btn btn-primary">Découvrir les talents</a>
+         </div>
+    </section>
+        
+        <!--Section services-->
+    <section id="services">
+        <div class="container py-5">
+            <h2>Nos domaines d'expertise</h2>
+            <div class="row">
+                <div class="col mp-4">
+                    <h3>Developpement Web</h3>
+                    <p>Sites vitrine, applications web, e-commerce.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Design Graphique</h3>
+                    <p>Identité visuelle, UI/UX, illustrations.</p>
+                </div>
+                 <div class="col-md-4">
+                    <h3>Marketing Digital</h3>
+                    <p>Réseaux sociaux,SEO, campagnes publicitaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Statistiques-->
+    <section id="statistiques">
+        <div class="containerpy-5">
+            <h2>Afritalent en chiffres</h2>
+            <div class="row text-center">
+                <div class="col-md-4"><p> +1200 Freelances</p></div>
+                <div class="col-md-4"><p> 45pays représentes</p></div>
+                <div class="col-md-4"><p> +3800 Projets réalisés</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Temoignages-->
+    <section id="temoignages">
+        <div class="container py-5">
+            <h2>Ce que disent nos clients</h2>
+            <blockquote class="blockquote">
+                <p>AfriTalent m'a permis de trouver un developpeur competent en moins de 48h.</p>
+                <footer class="blockquote-footer">Ousmane Gueye, Directeur Marketing</footer>
+            </blockquote>
+        </div>
+    </section>
+</main>
+
+<!--Pied de page-->
+<footer>
+    <div class="container py-4">
+        <p>&copy; 2026 AfriTalent, Tous droits reserves.</p>
+    </div>
+</footer>
+
+<script src="htpps://cdn.jsdelivr.net/npm/bootstraps@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

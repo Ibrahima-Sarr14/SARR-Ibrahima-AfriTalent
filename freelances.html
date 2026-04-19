@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent -Freelances</title>
-    <link href="htpps://cdn.jsdelivr.net/npm/bootstra@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>AfriTalent</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">AfriTalent</a>
+            <a class="navbar-brand" href="freelances.html"></a>
+            <img src="images/AfriTalent log .jpeg" alt="logo" height="50px" >
             <button class= "navbar-toggler" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navMenu"
@@ -25,6 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                     <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -32,61 +37,174 @@
     </nav>
 
     <main>
-
-        <!--Section Hero : accroche principale-->
-    <section id="freelances">
-         <div class="container py-5">
-            <h1>Nos freelances</h1>
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ousmane Gueye</h5>
-                            <p class="card-text">Développement web</p>
-                            <p class="card-text">Tarif: 150000 FCFA/Jour</p>
-                            <p class="card-text">⭐⭐⭐⭐⭐</p>
-                            <a href="#" class="btn btn-primary">Voir le profil</a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Mouhamed DIOUF</h5>
-                            <p class="card-text">Design UI/UX</p>
-                            <p class="card-text">Tarif: 120000 FCFA/Jour</p>
-                            <p class="card-text">⭐⭐⭐⭐</p>
-                            <a href="#" class="btn btn-primary">Voir le profil</a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Astou NGOM</h5>
-                            <p class="card-text">Marketing Digital</p>
-                            <p class="card-text">Tarif: 150000 FCFA/Jour</p>
-                            <p class="card-text">⭐⭐⭐⭐⭐</p>
-                            <a href="#" class="btn btn-primary">Voir le profil</a>
-                        </div>
-                    </div>
-                </div>
-
+   <!-- FILTRES-->
+    <section id="filtres">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Catalogue</span>
+                <h2 class="section-title">Nos Freelances</h2>
+                <p class="section-sub">Trouvez le talent qu'il vous fautL</p>
             </div>
-         </div>
-    </section>
-    
+
+            <!-- Boutoons filtres-->
+             <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <button class="btn-filtre actif" data-categorie="tous">Tous</button>
+                <button class="btn-filtre" data-categorie="dev"> Développement Web</button>
+                <button class="btn-filtre" data-categorie="design">Design UI/UX</button>
+                <button class="btn-filtre" data-categorie="marketing ">Marketing Digital</button>
+                <button class="btn-filtre" data-categorie="data">Data & IA</button>
+                <button class="btn-filtre" data-categorie="redaction">Rédaction Tech</button>
+                <button class="btn-filtre" data-categorie="devops">DevOps & Cloud</button>
+             </div>
+        </div>
+    </section> 
+<!--CATALOGUE--> 
+<section id="catalogue">
+    <div class="container">
+        <div class="row g-4" id="grille-freelances">
+
+            <!-- Carte 1-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="dev">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">AM</div>
+                    <h5 class="freelance-nom">Amina MBAYE</h5>
+                    <p class="freelance-spacialiste">Développement Web</p>
+                    <p class="freelance-bio">Développeuse fullsteak passionnées, 5ans d'expérience en React et Node.js</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 25 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 2-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="design">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">RD</div>
+                    <h5 class="freelance-nom">Rokhaya NDIAYE</h5>
+                    <p class="freelance-spacialiste">Design UI/UX</p>
+                    <p class="freelance-bio">Desiner créatif spécialisé en o=interfaces mobiles et expérience utilisateur.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 20 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 3-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="marketing">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">MM</div>
+                    <h5 class="freelance-nom">Moustapha MBOW</h5>
+                    <p class="freelance-spacialiste">Marketing Digital</p>
+                    <p class="freelance-bio">Experte en SEO, réseaux sociaux et campagnes publicitaires Google Ads.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 18 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+              <!-- Carte 4-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="data">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">MF</div>
+                    <h5 class="freelance-nom">Maimouna FALL</h5>
+                    <p class="freelance-spacialiste">Data & IA</p>
+                    <p class="freelance-bio">Data scientist spécialisé en machine learning et analyse prédictive.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 35 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 5-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="redaction">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">TS</div>
+                    <h5 class="freelance-nom">Thioro SARR</h5>
+                    <p class="freelance-spacialiste">Rédaction Tech</p>
+                    <p class="freelance-bio">Rédactrice technique bilingue, spécialisée en documentation et articles tech.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 15 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 6-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="devOps">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">MC</div>
+                    <h5 class="freelance-nom">Mouhamed CAMARA</h5>
+                    <p class="freelance-spacialiste">DevOps & Cloud</p>
+                    <p class="freelance-bio">Ingénieur DevOps certifiés AWS, expert en CI/CD et conteneurisation Docker</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 40 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 7-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="dev">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">IB</div>
+                    <h5 class="freelance-nom">Ibrahima BALDE</h5>
+                    <p class="freelance-spacialiste">Développement Web</p>
+                    <p class="freelance-bio">Développeur fronted spécialisé en vue.js et animations CSS avancées.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 22 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 8-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="design">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">MN</div>
+                    <h5 class="freelance-nom">Mariama NIASS</h5>
+                    <p class="freelance-spacialiste">Design UI/IX</p>
+                    <p class="freelance-bio">Designer UX spécialisée en recherche utilisateur et prototypage Figma.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 28 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+
+              <!-- Carte 9-->
+             <div class="col-12 col-md-6 col-lg-4" data-categorie="marketing">
+                <div class="freelance-card">
+                    <div class="freelance-avatar">BD</div>
+                    <h5 class="freelance-nom">Boubacar DIALLO</h5>
+                    <p class="freelance-spacialiste">Marketing Digital</p>
+                    <p class="freelance-bio">Growth hacker spécialisé en acquisition client et stratégie de contenu.</p>
+                    <div class="freelance-info">
+                        <span class="freelance-tarif">💰 17 000 FCFA/h</span>
+                        <span class="freelance-note">⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="btn btn-outline-warning w-100 m-3">Voir le profil</button>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
 <!--Pied de page-->
-<footer>
-    <div class="container py-4">
         <p>&copy; 2026 AfriTalent, Tous droits reserves.</p>
     </div>
 </footer>
 
-<script src="htpps://cdn.jsdelivr.net/npm/bootstraps@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstraps@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

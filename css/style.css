@@ -1,4 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Popins: wgth@400;600;700&family=Roboto: wght@400;500&display=swap');
+/* === Variables CSS ===*/
 :root{
-    
+    --couleur-primaire:#e07b39;
+    --couleur-secondaire: #2c3e50;
+    --couleur-accent: #27ae60;
+    --couleur-fond: #f8f9fa;
+    --couleur-texte: #333333;
+    --couleur-blanc: #ffffff;
+    --police-titre:'Montserrat', sans-serif;
+    --police-corps: 'Open sans', sans-serif;
+    --espacement-section: 80px;
+    --border-radius: 10px;
+}
+
+/* === GOOGLE FONTS ===*/
+    @import url('https://fonts.googleapis.com/css2?family=Popins: wgth@400;600;700&family=Roboto: wght@400;500&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: var(--police-corps);
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--police-titre);
+    font-weight: 700;
+}
+
+/* ==== NAVBAR ====*/
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    font-family: var(--police-titre);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--couleur-primaire);
+}
+
+.nav-link{
+    color: var(--couleur-blanc);
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.nav link :hover{
+    color: var(--couleur-primaire);
+}
+
+/* ==== SECTIONS ====*/
+section{
+    padding: var(--espacement-section) 0;
+}
+section h1, section h2{
+    margin-bottom: 40px;
+    color: var(--couleur-secondaire);
+}
+
+.card{
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== BOUTTONS ==== */
+.btn-primary{
+    background-color: var(--couleur-primaire);
+    border-color: var(--couleur-primaire);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+}
+
+.btn-primary:hover{
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-secondaire);
+}
+
+/*==== FOOTER ==== */
+footer{
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-blanc);
+    text-align: center;
 }

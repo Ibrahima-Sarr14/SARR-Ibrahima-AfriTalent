@@ -3,91 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent -Accueil</title>
-    <link href="htpps://cdn.jsdelivr.net/npm/bootstra@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AfriTalent</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- === NAVBAR ===-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">AfriTalent</a>
-            <button class= "navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navMenu"
-                    aria-controls="navMenu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggle-icon"></span>
+            <a class="navbar-brand" href="index.html">
+            <img src="images/AfriTalent log .jpeg" alt="logo"  height="50px" >
+            </a>
+        
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelance.html">Freelance</a></li>
                     <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-itiem ms-3">
+                        <a href="index.html" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 
-    
     <main>
 
         <!--Section Hero : accroche principale-->
     <section id="hero">
-         <div class="container py-5">
-            <h1>Trouvez le talent africain qu'il vous fait</h1>
-            <p>Afritalent connecte les freelances africains aux clients du monde entier.</p>
-            <a href="freelances.html" class="btn btn-primary">Découvrir les talents</a>
-         </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-white">
+                    <span class="hero-label">🌍 #1 Plateforme Freelance Africaine</span>
+                    <h1>Trouvez le talent africain qu'il vous faut</h1>
+                    <h2>La plateforme qui connecte les freelances africainsaux entreprisesdu monde entier.</h2>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="freelances.html" class="btn btn-warning btn-lg px-4">Je suis Freelance</a>
+                        <a href="freelances.html" class="btn btn-outline-light btn-lg px-4">Je cherche un Freelancce</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="images/african.avif" alt="Freelances africains">
+                </div>
+            </div>
+        </div>
     </section>
         
-        <!--Section services-->
-    <section id="services">
-        <div class="container py-5">
-            <h2>Nos domaines d'expertise</h2>
-            <div class="row">
-                <div class="col mp-4">
-                    <h3>Developpement Web</h3>
-                    <p>Sites vitrine, applications web, e-commerce.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Design Graphique</h3>
-                    <p>Identité visuelle, UI/UX, illustrations.</p>
-                </div>
-                 <div class="col-md-4">
-                    <h3>Marketing Digital</h3>
-                    <p>Réseaux sociaux,SEO, campagnes publicitaires.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!--Section Statistiques-->
     <section id="statistiques">
-        <div class="containerpy-5">
-            <h2>Afritalent en chiffres</h2>
-            <div class="row text-center">
-                <div class="col-md-4"><p> +1200 Freelances</p></div>
-                <div class="col-md-4"><p> 45pays représentes</p></div>
-                <div class="col-md-4"><p> +3800 Projets réalisés</p></div>
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">+<span class="counter" data-target="+2500">2500</span></div>
+                    <div class="stat-label">Freelances</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="counter" data-target="+800">+800</span></div>
+                    <div class="stat-label">Entreprises</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">+<span class="counter" data-target="+12000">12000</span></div>
+                    <div class="stat-label">missions réalisés</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--Section Temoignages-->
-    <section id="temoignages">
-        <div class="container py-5">
-            <h2>Ce que disent nos clients</h2>
-            <blockquote class="blockquote">
-                <p>AfriTalent m'a permis de trouver un developpeur competent en moins de 48h.</p>
-                <footer class="blockquote-footer">Ousmane Gueye, Directeur Marketing</footer>
-            </blockquote>
+        <!-COMMENT CA MARCHE-!->
+    <section id="how">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Processus</span>
+                <h2 class="section-title">Comment ça marche ?</h2>
+                <p class="section-sub">Quatre étapes simples pour démarrer.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card accent large">
+                    <div class="bento-step">Étape 01</div>
+                    <div class="bento-icon">📝</div>
+                    <div class="bento-title">Publiez votre mission ou créez votre profil</div>
+                    <div class="bento-desc">Décrivez vos besoins en quelques minutes ou mettez en valeur vos compétences avec un profil professionnel.</div>
+                </div>
+                <div class="bento-card dark">
+                    <div class="bento-step">Étape 02</div>
+                    <div class="bento-icon">🤝</div>
+                    <div class="bento-title">Trouvez le bon match</div>
+                    <div class="bento-desc">Notre algorithme connecte projets et talents selon compétences et disponibilité.</div>
+                </div>
+                <div class="bento-card light">
+                    <div class="bento-step">Étape 03</div>
+                    <div class="bento-icon">🔒</div>
+                    <div class="bento-title">Paiement sécurisé</div>
+                    <div class="bento-desc">Les fonds sont bloqués jusqu'à validation. Vous ne payez que si satisfait.</div>
+                </div>
+                <div class="bento-card light large">
+                    <div class="bento-step">Étape 04</div>
+                    <div class="bento-icon">⭐</div>
+                    <div class="bento-title">Évaluez et fidélisez</div>
+                    <div class="bento-desc">Notez votre expérience et construisez des relations durables avec vos freelances préférés.</div>
+                </div>
+            </div>
         </div>
     </section>
+
+  <!--CATEGORIES-->      
+<section id="services"> 
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-label">Services</span>
+            <h2 class="section-title">Nos domaines</h2>
+            <p class="section-sub">Trouvez l'expertise dont vous avez besion.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">💻</div>
+                    <div class="cat-title">Développement Web</div>
+                    <div  class="cat-coun">342 freelances</div>
+                </div>
+            </div>
+        </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">🎨</div>
+                    <div class="cat-title">Design UI/UX</div>
+                    <div  class="cat-coun">218 freelances</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">🎤</div>
+                    <div class="cat-title">Marketing Digital</div>
+                    <div  class="cat-coun">195 freelances</div>
+                </div>
+            </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">🧠</div>
+                    <div class="cat-title">Data & IA</div>
+                    <div  class="cat-coun">127 freelances</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">✍️</div>
+                    <div class="cat-title">Rédaction Tech</div>
+                    <div  class="cat-coun">156 freelances</div>
+                </div>
+            </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <div class="cat-card">
+                    <div class="cat-icon">☁️</div>
+                    <div class="cat-title">DevOps & Cloud</div>
+                    <div  class="cat-coun">89 freelances</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+    
+    <!--Section Temoignages-->
+<section id="temoignages">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Témoignages</span>
+                <h2 class="section-title">Ce que disent nos clients</h2>
+            </div>
+            <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner pb-4">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 px-2">
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"AfriTalent m'a permis de trouver un développeur compétent en moins de 48h."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,orange,#8B4A00);">OG</div>
+                                        <div>
+                                            <div class="testi-name">Ousmane Gueye</div>
+                                            <div class="testi-role">Entreprise — Directeur Marketing</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"En 3 semaines j'avais déjà 5 clients réguliers. AfriTalent a changé ma façon de travailler."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3D7D4A,#1A4A24);">AM</div>
+                                        <div>
+                                            <div class="testi-name">Amina Mbaye</div>
+                                            <div class="testi-role">Freelance — Développeuse Web</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"Le paiement sécurisé m'a convaincu. Je collabore avec des freelances du Sénégal depuis Nairobi."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3D4A7D,#1A2447);">OW</div>
+                                        <div>
+                                            <div class="testi-name">Omar SOW</div>
+                                            <div class="testi-role">Entreprise — Startup Kenya</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 px-2">
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"Mes revenus ont triplé en 6 mois. J'ai pu quitter mon emploi salarié grâce à AfriTalent."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#D44343,#8B1A1A);">FD</div>
+                                        <div>
+                                            <div class="testi-name">Fatou Diallo</div>
+                                            <div class="testi-role">Freelance — Data Analyst</div>
+                                        </div>
+                                    </div>
+                                </div
+                            
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"La plateforme est intuitive, le support réactif. Nos projets sont toujours livrés dans les délais."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#43B8D4,#1A6B8B);">MC</div>
+                                        <div>
+                                            <div class="testi-name">Mohamed Camara</div>
+                                            <div class="testi-role">Entreprise — Mali Invest</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"AfriTalent est la preuve que l'Afrique déborde de talents. Fier d'y contribuer chaque jour."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#A843D4,#5A1A8B);">ZA</div>
+                                        <div>
+                                            <div class="testi-name">Mouhamed THIANE</div>
+                                            <div class="testi-role">Freelance — UX Designer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 px-2">
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"Nous avons trouvé un expert DevOps en 24h pour un projet critique. Qualité au rendez-vous."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#D48743,#8B4A1A);">IA</div>
+                                        <div>
+                                            <div class="testi-name">Moustapha DIOP</div>
+                                            <div class="testi-role">Entreprise — CTO FinTechCI</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"Excellente expérience. Les profils sont bien vérifiés. Très bonne initiative panafricaine."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#43D4A8,#1A8B62);">EN</div>
+                                        <div>
+                                            <div class="testi-name">Oumou THIANE</div>
+                                            <div class="testi-role">Freelance — Rédactrice Tech</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testi-card">
+                                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="testi-quote">"J'ai rejoint AfriTalent il y a 1 an. Aujourd'hui j'ai une équipe virtuelle et des projets passionnants."</p>
+                                    <div class="d-flex align-items-center gap-3 mt-3">
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#D4C443,#8B7A1A);">DB</div>
+                                        <div>
+                                            <div class="testi-name">Diallo Boubacar</div>
+                                            <div class="testi-role">Freelance — Growth Hacker</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+     <section id="cta">
+        <div class="conttainer">
+            <span class="section-label">Rejoignez-nous</span>
+            <h2>prêt à transformer votre <span>carrière ?</span></h2>
+            <p>Rejoignez +2500 freelances africaons qui tranvaillent avec les meilleures entreprises di continent.</p>
+            <a href="#" class="btn-cta">Rejoindre AfriTalentgratuitement</a>
+        </div>
+     </section>
 </main>
+
+<!-- FOOTER -->
+ <footer>
+    <div class="container">
+        <div class="row g-4">
+            <!-- COL 1-->
+             <div class="col-lg-3 col-md-6">
+                <div class="footer-brand">Afri<span>Talent</span></div>
+                <p class="footer-desc">La platefortme qui connectre les talents africains aux meilleures opportunités.</p>
+                <div class="mt-3 d-flex gap-2">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></a>
+                </div>
+             </div>
+             <!--COL 2-->
+             <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Liens utiles</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Trouvez un freelance</a></li>
+                    <li><a href="tarifs.html">Tarifs & abonnement</a></li>
+                    <li><a href="about.html">A propos de nous</a></li>
+                </ul>
+             </div>
+             <!--COL 3-->
+             <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Ressouces</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Blog AfriTalent</a></li>
+                    <li><a href="#">Guide du freelances</a></li>
+                    <li><a href="#">Centre d'aide (FAQ)</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                </ul>
+             </div>
+             <!--COL4-->
+             <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Contact</h6>
+                <ul class="footer-links">
+                    <li><a href="#">📧contact@afritalent.com</a></li>
+                    <li><a href="#">📞+221 33 123 45 67</a></li>
+                    <li><a href="#">📍Dakar, Sénégal</a></li>
+                </ul>
+             </div>
+        </div>
+    </div>
+ </footer>
 
 <!--Pied de page-->
 <footer>
@@ -96,7 +402,7 @@
     </div>
 </footer>
 
-<script src="htpps://cdn.jsdelivr.net/npm/bootstraps@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css//bootstrap.min.css"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

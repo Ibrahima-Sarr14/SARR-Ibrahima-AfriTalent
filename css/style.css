@@ -1,0 +1,28 @@
+/* ==VARIABLES CSS ==*/
+:root{
+    --couleur-primaire:#FFA500;
+    --couleur-sombre:#0D0D0D;
+    --couleur-fond:#F8F9FA;
+    --couleur-texte: #1A1A1A;
+    --couleur-muted: #666666;
+    --couleur-blanc: #FFFFFF;
+    --border-radius: 20px;
+    --transition: all 0.3s ease;
+}
+
+/* == BASE ==*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--couleur-texte);
+    background: var(--couleur-blanc);
+}
+
+h1, h2, h3{
+    font-family: 'PlayFair Display', serrif;
+}

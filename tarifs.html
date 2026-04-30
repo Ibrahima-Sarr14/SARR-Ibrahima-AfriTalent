@@ -1,212 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarifs</title>
     <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+       <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
         <a class="navbar-brand" href="tarifs.html"></a>
-        <img src="images/AfriTalent log .jpeg" alt="logo" height="50px" >
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
+        <img src="images/AfriTalent log .jpeg" alt="logo" height="50px" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a  class="nav-link" href="freelances.html">Freelances </a></li>
-                <li class="nav-item"><a  class="nav-link" href="tarifs.html">Tarifs</a></li>
-                <li class="nav-item"><a  class="nav-link" href="about.html">A propos</a></li>
-                <li class="nav-item"><a  class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a  class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="freelances.html">Freelances </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tarifs.html">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div> 
-   </nav>
+      </div>
+    </nav>
 
-   <main>
-   <!-- TITRE-->
-    <section id="terifs-hero">
+    <main>
+      <!-- TITRE-->
+      <section id="terifs-hero">
         <div class="contziner text-center">
-            <span class="section-label">Tarification</span>
-            <h2 class="section-title">Choisissez votre plan</h2>
-            <p class="section-sub">Commencez gratuitement, évoluez selon vos besoins.</p>
-        </div>
-    </section>
-
-    <!-- PLANS-->
-     <section id="plans">
-        <div class="container">
-         <div class="row g-4 justify-content-center">
-
-            <!-- Plan Gratuit-->
-             <div class="col-12 col-md-4">
-                <div class="plan-card">
-                    <h3 class="plan-nom">Gratuit</h3>
-                    <div class="plan-prix">0 FCFA <span>/mois</span></div>
-
-                    <!-- Liste ici AVANT le bouton -->
-                    <ul class="plan-features">
-                        <li>✅ 3 candidatures/mois</li>
-                        <li>✅ Profil basique</li>
-                        <li>✅ Accès aux offres publiques</li>
-                        <li>❌ Mise en avant du profil</li>
-                        <li>❌ Support prioritaire</li>
-                    </ul>
-                    <!-- Liste fonctionnalités ici-->
-                     <a href="#" class="btn btn-outline-warning w-100 mt-4">Commencer</a>
-                </div>
-             </div>
-
-             <!-- Plan Pro (mis en avant)-->
-              <div class="col-12 col-md-4">
-                <div class="plan-card plan-populaire">
-                    <span class="badge-populaire">⭐ Populaire</span>
-                    <h3 class="plan-nom">Pro</h3>
-                    <div class="plan-prix">9900 FCFA <span>/mois</span></div>
-                    <!-- Liste plan Pro -->
-                    <ul class="plan-features">
-                        <li>✅ Candidatures illimitées</li>
-                        <li>✅ Profil mis en avant</li>
-                        <li>✅ Accès aux offres exclusives</li>
-                        <li>✅ Support prioritaire</li>
-                        <li>✅ Badge vérifié</li>
-                    </ul>
-                    <!--Liste fonctionnalités-->
-                    <a href="#" class="btn btn-warning w-100 mt-4">Choisir Pro</a>
-                </div>
-              </div>
-
-              <!-- Plan Entreprise-->
-              <div class="col-12 col-md-4">
-                <div class="plan-card">
-                    <h3 class="plan-nom">Entreprise</h3>
-                    <div class="plan-prix">29900 FCFA <span>/mois</span></div>
-                    <!-- Liste plan Entreprise -->
-                    <ul class="plan-features">
-                        <li>✅ Tout le plan Pro</li>
-                        <li>✅ Gestion d'équipe</li>
-                        <li>✅ Tableau de bord avancé</li>
-                        <li>✅ Facturation personnalisée</li>
-                        <li>✅ Account manager dédié</li>
-                    </ul>
-                    <!--Liste fonctionnalité icis-->
-                    <a href="#" class="btn btn-warning w-100 mt-4">Nous contacter</a>
-                </div>
-              </div>
-         </div>   
-        </div>
-     </section>
-
-     <!-- FAQ-->
-      <section id="faq">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="section-label">FAQ</span>
-                <h2 class="section-title">Questions fréquentes</h2>
-            </div>
-            <!--accordion ici-->
-            <div class="accordion" id="faqAccordion">
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq1">
-                            Comment créer un compte sur AfriTalent ?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse show"
-                    data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Cliquez sur "rejoindre AfriTalent", remplissez le formulaire et confirmez votre email. C'est gratuit et rapide!
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
-                            Comment fonctionne le paiement sécurisé ?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse show"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Les fonds sont bloqués sur un compte séquestre jusqu'à la validation du travail par le client.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
-                           Puis-je changer de plan à tout moment ?
-                        </button>
-                    </h2>
-                    <div id="faq3" class="accordion-collapse collapse"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Oui, vous pouvez changer votre plan à tout moment depuis votre tableau de bord.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq4">
-                            AfriTalent prend-il une commission sur les missions ?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                           Une commission de 10% est ppliquée sur chaque mission. Elle couvre la sécurité des paiements et le support.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq5">
-                            Comment contacter le support AfriTalent ?
-                        </button>
-                    </h2>
-                    <div id="faq5" class="accordion-collapse collapse show"
-                    data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Via le formulaire de contact, par email à contact@afritalent.com ou via le chat en direct disponible 7j/7.
-                        </div>
-                    </div>
-                </div>   
-            </div>
+          <span class="section-label">Tarification</span>
+          <h2 class="section-title">Choisissez votre plan</h2>
+          <p class="section-sub">
+            Commencez gratuitement, évoluez selon vos besoins.
+          </p>
         </div>
       </section>
-   </main>
 
-   <footer>
-    <div class="container py-4">
+      <!-- PLANS-->
+      <section id="plans">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- Plan Gratuit-->
+            <div class="col-12 col-md-4">
+              <div class="plan-card">
+                <h3 class="plan-nom">Gratuit</h3>
+                <div class="plan-prix">0 FCFA <span>/mois</span></div>
+
+                <!-- Liste ici AVANT le bouton -->
+                <ul class="plan-features">
+                  <li>✅ 3 candidatures/mois</li>
+                  <li>✅ Profil basique</li>
+                  <li>✅ Accès aux offres publiques</li>
+                  <li>❌ Mise en avant du profil</li>
+                  <li>❌ Support prioritaire</li>
+                </ul>
+                <!-- Liste fonctionnalités ici-->
+                <a href="#" class="btn btn-outline-warning w-100 mt-4">Commencer</a>
+              </div>
+            </div>
+
+            <!-- Plan Pro (mis en avant)-->
+            <div class="col-12 col-md-4">
+              <div class="plan-card plan-populaire">
+                <span class="badge-populaire">⭐ Populaire</span>
+                <h3 class="plan-nom">Pro</h3>
+                <div class="plan-prix">9900 FCFA <span>/mois</span></div>
+                <!-- Liste plan Pro -->
+                <ul class="plan-features">
+                  <li>✅ Candidatures illimitées</li>
+                  <li>✅ Profil mis en avant</li>
+                  <li>✅ Accès aux offres exclusives</li>
+                  <li>✅ Support prioritaire</li>
+                  <li>✅ Badge vérifié</li>
+                </ul>
+                <!--Liste fonctionnalités-->
+                <a href="#" class="btn btn-warning w-100 mt-4">Choisir Pro</a>
+              </div>
+            </div>
+
+            <!-- Plan Entreprise-->
+            <div class="col-12 col-md-4">
+              <div class="plan-card">
+                <h3 class="plan-nom">Entreprise</h3>
+                <div class="plan-prix">29900 FCFA <span>/mois</span></div>
+                <!-- Liste plan Entreprise -->
+                <ul class="plan-features">
+                  <li>✅ Tout le plan Pro</li>
+                  <li>✅ Gestion d'équipe</li>
+                  <li>✅ Tableau de bord avancé</li>
+                  <li>✅ Facturation personnalisée</li>
+                  <li>✅ Account manager dédié</li>
+                </ul>
+                <!--Liste fonctionnalité icis-->
+                <a href="#" class="btn btn-warning w-100 mt-4">Nous contacter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ-->
+      <section id="faq">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Questions fréquentes</h2>
+          </div>
+          <!--accordion ici-->
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  Comment créer un compte sur AfriTalent ?
+                </button>
+              </h2>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Cliquez sur "rejoindre AfriTalent", remplissez le formulaire
+                  et confirmez votre email. C'est gratuit et rapide!
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  Comment fonctionne le paiement sécurisé ?
+                </button>
+              </h2>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Les fonds sont bloqués sur un compte séquestre jusqu'à la
+                  validation du travail par le client.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  Puis-je changer de plan à tout moment ?
+                </button>
+              </h2>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Oui, vous pouvez changer votre plan à tout moment depuis votre
+                  tableau de bord.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  AfriTalent prend-il une commission sur les missions ?
+                </button>
+              </h2>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Une commission de 10% est ppliquée sur chaque mission. Elle
+                  couvre la sécurité des paiements et le support.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  Comment contacter le support AfriTalent ?
+                </button>
+              </h2>
+              <div
+                id="faq5"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Via le formulaire de contact, par email à
+                  contact@afritalent.com ou via le chat en direct disponible
+                  7j/7.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container py-4">
         <p>&copy; 2026 AfriTalent, Tous droits reserves.</p>
-    </div>
-   </footer>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstra@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,243 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
-    <!-- Bootstrap-->
+    <title>AfriTalent — À propos</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-       <!--Google Fonts-->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
-    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- CSS perso -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+
+<!-- === NAVBAR === -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="about.html"></a>
-            <img src="images/AfriTalent log .jpeg" alt="logo" height="50px" >
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/AfriTalent log .jpeg" alt="Logo AfriTalent" height="50">
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="freelances.html">Freelances </a></li>
-                    <li class="nav-item"><a  class="nav-link" href="tarifs.html">Tarifs</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="about.html">A propos</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 
-    <main>
-       <!--Section Notre Histoire--> 
-       <section id="histoire">
+<main>
+
+    <!-- === NOTRE HISTOIRE === -->
+    <section id="histoire">
         <div class="container">
             <div class="row align-items-center g-5">
-                <!--Texte gauche-->
+                <!-- Texte gauche -->
                 <div class="col-lg-6">
                     <span class="section-label">Notre Histoire</span>
-                    <h2 class="section-title">Nésen Afrique,<br>pensés pour le monde</h2>
-                    <p>AfriTalent est né en 2022 à Dakar, de la conviction que l'Afrique regorge de talents tech exceptionnels qui manquent simplment de visibilité internationale.</p>
-                    <p>Fondée par une équipe de jeunes etrepreneurs passionés, notre platforme connecte aujourd'hui plus de 2500 freelances dans 45pays africains avec des entreprises du monde entier.</p>
-                    <p>Notre mission: faire de l'Afrique le prochain hub mondial du freelancing tech.</p>
+                    <h2 class="section-title">Nés en Afrique,<br>pensés pour le monde</h2>
+                    <p>AfriTalent est né en 2022 à Dakar, de la conviction que l'Afrique regorge de talents tech exceptionnels qui manquent simplement de visibilité internationale.</p>
+                    <p>Fondée par une équipe de jeunes entrepreneurs passionnés, notre plateforme connecte aujourd'hui plus de 2 500 freelances dans 45 pays africains avec des entreprises du monde entier.</p>
+                    <p>Notre mission : faire de l'Afrique le prochain hub mondial du freelancing tech.</p>
                 </div>
-                <!-- Image droite-->
-                 <div class="col-lg-g-6">
-                    <img src="images/african.avif" alt="Histoire AfriTalent" class="im-fluid rounded-4">
+                <!-- Image droite -->
+                <div class="col-lg-6">
+                    <img src="images/african.avif" alt="Histoire AfriTalent" class="img-fluid rounded-4">
+                </div>
             </div>
-        </div>
-       </section>
-
-       <!--Section Equipe-->
-        <section id="equipe">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="section-label">L'équipe</span>
-                    <h2 class="section-title">Ceux qui font AfriTalent</h2>
-                </div>
-                <div class="row g-4">
-
-                    <!-- Membre 1 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">KD</div>
-                            <h5 class="membre-nom">Kofi Diallo</h5>
-                            <p class="membre-poste">CEO & Co-fondateur</p>
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Membre 2 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">AM</div>
-                            <h5 class="membre-nom">Amina Mbaye</h5>
-                            <p class="membre-poste">CTO & Co-fondatrice</p>
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Membre 3 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">FN</div>
-                            <h5 class="membre-nom">Fatou Ndiaye</h5>
-                            <p class="membre-poste">Directrice Marketing</p>
-                            <img src="images/Marketing digital.avif" alt="marketing">
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Membre 4 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">OT</div>
-                            <h5 class="membre-nom">Otieno Traoré</h5>
-                            <p class="membre-poste">Lead Developer</p>
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Membre 3 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">FN</div>
-                            <h5 class="membre-nom">Fatou Ndiaye</h5>
-                            <p class="membre-poste">Directrice Marketing</p>
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Membre 4 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="membre-card">
-                            <div class="membre-avatar">OT</div>
-                            <h5 class="membre-nom">Otieno Traoré</h5>
-                            <p class="membre-poste">Lead Developer</p>
-                            <div class="membre-socials">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
         </div>
     </section>
 
-        <!--Section valeurs-->
-        <section id="valeurs">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="section-label">Nos Valeurs</span>
-                    <h2 class="section-title">Ce en quoi nous croyons</h2>
+    <!-- === EQUIPE === -->
+    <section id="equipe">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">L'équipe</span>
+                <h2 class="section-title">Ceux qui font AfriTalent</h2>
+            </div>
+            <div class="row g-4">
+
+                <!-- Membre 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="membre-card">
+                        <div class="membre-avatar">KD</div>
+                        <h5 class="membre-nom">Kofi Diallo</h5>
+                        <p class="membre-poste">CEO & Co-fondateur</p>
+                        <div class="membre-socials">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="valeur-card">
-                            <div class="valeur-icon">💡</div>
-                            <h5 class="valeur-title">Innovation</h5>
-                            <p class="valeur-desc"> Nous repoussons les limites pour offir les meilleures solutions tech à nos utilisateurs.</p>
+                <!-- Membre 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="membre-card">
+                        <div class="membre-avatar">AM</div>
+                        <h5 class="membre-nom">Amina Mbaye</h5>
+                        <p class="membre-poste">CTO & Co-fondatrice</p>
+                        <div class="membre-socials">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="valeur-card">
-                            <div class="valeur-icon">🌍</div>
-                            <h5 class="valeur-title">Accessibilité</h5>
-                            <p class="valeur-desc"> Nous renndons le freelancing accessible à tous les talents africains, sans barrières.</p>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="valeur-card">
-                            <div class="valeur-icon">🤝</div>
-                            <h5 class="valeur-title">Communauté</h5>
-                            <p class="valeur-desc">Nous bâtissons une communauté solidaire de freelances qui s'entraident et grandissent ensemble.</p>
+                <!-- Membre 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="membre-card">
+                        <div class="membre-avatar">FN</div>
+                        <h5 class="membre-nom">Fatou Ndiaye</h5>
+                        <p class="membre-poste">Directrice Marketing</p>
+                        <div class="membre-socials">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="valeur-card">
-                            <div class="valeur-icon">⭐</div>
-                            <h5 class="valeur-title">Excellence</h5>
-                            <p class="valeur-desc">Nous exigeons la qualité à chaque étape, de la mise en relation à la livraison finale.</p>
+                <!-- Membre 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="membre-card">
+                        <div class="membre-avatar">OT</div>
+                        <h5 class="membre-nom">Otieno Traoré</h5>
+                        <p class="membre-poste">Lead Developer</p>
+                        <div class="membre-socials">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
+                </div>
+
             </div>
         </div>
-      </section> 
+    </section>
 
-      <!--Section chiffres clés-->
-     <section id="chiffres">
+    <!-- === NOS VALEURS === -->
+    <section id="valeurs">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Nos Valeurs</span>
+                <h2 class="section-title">Ce en quoi nous croyons</h2>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="valeur-card">
+                        <div class="valeur-icon">💡</div>
+                        <h5 class="valeur-titre">Innovation</h5>
+                        <p class="valeur-desc">Nous repoussons les limites pour offrir les meilleures solutions tech à nos utilisateurs.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="valeur-card">
+                        <div class="valeur-icon">🌍</div>
+                        <h5 class="valeur-titre">Accessibilité</h5>
+                        <p class="valeur-desc">Nous rendons le freelancing accessible à tous les talents africains, sans barrières.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="valeur-card">
+                        <div class="valeur-icon">🤝</div>
+                        <h5 class="valeur-titre">Communauté</h5>
+                        <p class="valeur-desc">Nous bâtissons une communauté solidaire de freelances qui s'entraident et grandissent ensemble.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="valeur-card">
+                        <div class="valeur-icon">⭐</div>
+                        <h5 class="valeur-titre">Excellence</h5>
+                        <p class="valeur-desc">Nous exigeons la qualité à chaque étape, de la mise en relation à la livraison finale.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === CHIFFRES CLES === -->
+    <section id="chiffres">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Chiffres clés</span>
+                <h2 class="section-title">AfriTalent en chiffres</h2>
+            </div>
+            <div class="bento-grid">
+
+                <div class="bento-card accent large">
+                    <div class="bento-icon">👥</div>
+                    <div class="bento-title">+<span class="counter" data-target="2500">0</span> Freelances</div>
+                    <div class="bento-desc">actifs sur la plateforme dans toute l'Afrique</div>
+                </div>
+
+                <div class="bento-card dark">
+                    <div class="bento-icon">🌍</div>
+                    <div class="bento-title"><span class="counter" data-target="45">0</span> Pays</div>
+                    <div class="bento-desc">représentés sur AfriTalent</div>
+                </div>
+
+                <div class="bento-card light">
+                    <div class="bento-icon">✅</div>
+                    <div class="bento-title">+<span class="counter" data-target="3800">0</span> Missions</div>
+                    <div class="bento-desc">réalisées avec succès</div>
+                </div>
+
+                <div class="bento-card light large">
+                    <div class="bento-icon">😊</div>
+                    <div class="bento-title"><span class="counter" data-target="98">0</span>% Satisfaction</div>
+                    <div class="bento-desc">taux de satisfaction client sur toutes les missions</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- === FOOTER === -->
+<footer>
     <div class="container">
-        <div class="text-center mb-5">
-            <span class="section-label">Chiffres clés</span>
-            <h2 class="section-title">AfriTalent en chiffres</h2>
+        <div class="row g-4">
+            <!-- Col 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-brand">Afri<span>Talent</span></div>
+                <p class="footer-desc">La plateforme qui connecte les talents africains aux meilleures opportunités.</p>
+                <div class="mt-3 d-flex gap-2">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Col 2 -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Liens utiles</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Trouver un freelance</a></li>
+                    <li><a href="tarifs.html">Tarifs & abonnements</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                </ul>
+            </div>
+            <!-- Col 3 -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Ressources</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Blog AfriTalent</a></li>
+                    <li><a href="#">Guide du freelancing</a></li>
+                    <li><a href="#">Centre d'aide (FAQ)</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                </ul>
+            </div>
+            <!-- Col 4 -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Contact</h6>
+                <ul class="footer-links">
+                    <li><a href="#">📧 contact@afritalent.com</a></li>
+                    <li><a href="#">📞 +221 33 123 45 67</a></li>
+                    <li><a href="#">📍 Dakar, Sénégal</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="bento-grid">
-
-            <div class="bento-card accent large">
-                <div class="bento-icon">👥</div>
-                <div class="bento-title">+<span class="counter" data-target="2500">0</span> Freelances</div>
-                <div class="bento-desc">actifs sur la plateforme dans toute l'Afrique</div>
-            </div>
-
-            <div class="bento-card dark">
-                <div class="bento-icon">🌍</div>
-                <div class="bento-title"><span class="counter" data-target="45">0</span> Pays</div>
-                <div class="bento-desc">représentés sur AfriTalent</div>
-            </div>
-
-            <div class="bento-card light">
-                <div class="bento-icon">✅</div>
-                <div class="bento-title">+<span class="counter" data-target="3800">0</span> Missions</div>
-                <div class="bento-desc">réalisées avec succès</div>
-            </div>
-
-            <div class="bento-card light large">
-                <div class="bento-icon">😊</div>
-                <div class="bento-title"><span class="counter" data-target="98">0</span>% Satisfaction</div>
-                <div class="bento-desc">taux de satisfaction client sur toutes les missions</div>
-            </div>
-
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> AfriTalent. Tous droits réservés.</span>
+            <span>Fait avec ❤️ en Afrique</span>
         </div>
-    </div>
-</section>
-    </main>
-    <footer>
-    <div class="container py-4">
-        <p>&copy; 2026 AfriTalent, Tous droits reserves.</p>
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstraps@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

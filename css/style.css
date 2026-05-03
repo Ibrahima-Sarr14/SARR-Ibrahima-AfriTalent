@@ -26,3 +26,201 @@ body{
 h1, h2, h3{
     font-family: 'PlayFair Display', serrif;
 }
+/* -- NAVBAR --*/
+.navbar-brand img{
+    width: 80px;
+    height: auto;
+}
+
+.nav-link{
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color:var(--couleur-primaire) !important;
+}
+
+/* -- HERO*/
+#hero{
+    background-image: url('../images/african.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.overlay{  
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: 0;
+}
+
+#hero .container{
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1{
+    font-family: 'Playfair Display', serif;
+    font-size:clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+#hero h1 span{
+    color: var(--couleur-primaire);
+}
+
+#hero h2{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.hero-label {
+    background: rgba(255, 165, 0, 0.15);
+    color: var(--couleur-primaire);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+/* ── SECTION LABELS ── */
+.section-label {
+    background: rgba(255, 165, 0, 0.12);
+    color: var(--couleur-primaire);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-sub {
+    color: var(--couleur-muted);
+    font-size: 1rem;
+}
+
+/* ── STATISTIQUES ── */
+#statistiques {
+    background: var(--couleur-blanc);
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--couleur-primaire);
+}
+
+.stat-label {
+    color: var(--couleur-muted);
+    font-size: 0.85rem;
+}
+
+/* ── BENTO GRID ── */
+#how {
+    padding: 5rem 0;
+    background: var(--couleur-fond);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.bento-card {
+    border-radius: 20px;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.bento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bento-card.large {
+    grid-column: span 2;
+}
+
+.bento-card.accent {
+    background: var(--couleur-primaire);
+    color: white;
+}
+
+.bento-card.dark {
+    background: #1a1a2e;
+    color: white;
+}
+
+.bento-card.light {
+    background: var(--couleur-blanc);
+    border: 1.5px solid #eee;
+}
+
+.bento-step {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.bento-card.accent .bento-step { color: white; }
+.bento-card.dark .bento-step   { color: var(--couleur-primaire); }
+.bento-card.light .bento-step  { color: var(--couleur-primaire); }
+
+.bento-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.bento-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bento-desc {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    opacity: 0.85;
+}
+
+.bento-card.light .bento-desc {
+    color: var(--couleur-muted);
+    opacity: 1;
+}
+

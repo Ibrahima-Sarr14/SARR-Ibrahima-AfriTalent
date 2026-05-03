@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriTalent</title>
-    <!-- Bootstrap-->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--Google Fonts-->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
-    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- CSS perso -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- === NAVBAR ===-->
+<!-- === NAVBAR === -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-            <img src="images/AfriTalent log .jpeg" alt="logo"  height="50px" >
+                <img src="images/AfriTalent log .jpeg" alt="Logo AfriTalent" height="50">
             </a>
-        
             <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navMenu"
-            aria-controls="navMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="freelance.html">Freelance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                     <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-itiem ms-3">
-                        <a href="index.html" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
                     </li>
                 </ul>
             </div>
@@ -49,50 +49,51 @@
     </nav>
 </header>
 
-    <main>
+<main>
 
-        <!--Section Hero : accroche principale-->
+    <!-- === HERO === -->
     <section id="hero">
         <div class="overlay"></div>
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-7 text-white">
                     <span class="hero-label">🌍 #1 Plateforme Freelance Africaine</span>
-                    <h1>Trouvez le talent africain qu'il vous faut</h1>
-                    <h2>La plateforme qui connecte les freelances africainsaux entreprisesdu monde entier.</h2>
+                    <h1>Trouvez le talent africain <span>qu'il vous faut</span></h1>
+                    <h2>La plateforme qui connecte les freelances africains aux entreprises du monde entier.</h2>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="freelances.html" class="btn btn-warning btn-lg px-4">Je suis Freelance</a>
-                        <a href="freelances.html" class="btn btn-outline-light btn-lg px-4">Je cherche un Freelancce</a>
+                        <a href="freelances.html" class="btn btn-outline-light btn-lg px-4">Je cherche un Freelance</a>
                     </div>
-                </div>
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="images/african.avif" alt="Freelances africains">
-                </div>
-            </div>
-        </div>
-    </section>
-        
-    <!--Section Statistiques-->
-    <section id="statistiques">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-6 col-md-3">
-                    <div class="stat-number">+<span class="counter" data-target="+2500">2500</span></div>
-                    <div class="stat-label">Freelances</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number"><span class="counter" data-target="+800">+800</span></div>
-                    <div class="stat-label">Entreprises</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number">+<span class="counter" data-target="+12000">12000</span></div>
-                    <div class="stat-label">missions réalisés</div>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-COMMENT CA MARCHE-!->
+    <!-- === STATISTIQUES === -->
+    <section id="statistiques">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">+<span class="counter" data-target="2500">0</span></div>
+                    <div class="stat-label">Freelances actifs</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="counter" data-target="800">0</span></div>
+                    <div class="stat-label">Entreprises</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">+<span class="counter" data-target="12000">0</span></div>
+                    <div class="stat-label">Missions réalisées</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+                    <div class="stat-label">Taux de satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === COMMENT CA MARCHE === -->
     <section id="how">
         <div class="container">
             <div class="text-center mb-5">
@@ -129,67 +130,63 @@
         </div>
     </section>
 
-  <!--CATEGORIES-->      
-<section id="services"> 
-    <div class="container">
-        <div class="text-center mb-5">
-            <span class="section-label">Services</span>
-            <h2 class="section-title">Nos domaines</h2>
-            <p class="section-sub">Trouvez l'expertise dont vous avez besion.</p>
-        </div>
-        <div class="row g-3">
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">💻</div>
-                    <div class="cat-title">Développement Web</div>
-                    <div  class="cat-coun">342 freelances</div>
+    <!-- === CATEGORIES === -->
+    <section id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Services</span>
+                <h2 class="section-title">Nos domaines d'expertise</h2>
+                <p class="section-sub">Trouvez l'expertise dont vous avez besoin.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">💻</div>
+                        <div class="cat-title">Développement Web</div>
+                        <div class="cat-count">342 freelances</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">🎨</div>
+                        <div class="cat-title">Design UI/UX</div>
+                        <div class="cat-count">218 freelances</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">📢</div>
+                        <div class="cat-title">Marketing Digital</div>
+                        <div class="cat-count">195 freelances</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">🧠</div>
+                        <div class="cat-title">Data & IA</div>
+                        <div class="cat-count">127 freelances</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">✍️</div>
+                        <div class="cat-title">Rédaction Tech</div>
+                        <div class="cat-count">156 freelances</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="cat-card">
+                        <div class="cat-icon">☁️</div>
+                        <div class="cat-title">DevOps & Cloud</div>
+                        <div class="cat-count">89 freelances</div>
+                    </div>
                 </div>
             </div>
         </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">🎨</div>
-                    <div class="cat-title">Design UI/UX</div>
-                    <div  class="cat-coun">218 freelances</div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">🎤</div>
-                    <div class="cat-title">Marketing Digital</div>
-                    <div  class="cat-coun">195 freelances</div>
-                </div>
-            </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">🧠</div>
-                    <div class="cat-title">Data & IA</div>
-                    <div  class="cat-coun">127 freelances</div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">✍️</div>
-                    <div class="cat-title">Rédaction Tech</div>
-                    <div  class="cat-coun">156 freelances</div>
-                </div>
-            </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <div class="cat-card">
-                    <div class="cat-icon">☁️</div>
-                    <div class="cat-title">DevOps & Cloud</div>
-                    <div  class="cat-coun">89 freelances</div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
-</section>
-    
-    <!--Section Temoignages-->
-<section id="temoignages">
+    </section>
+
+    <!-- === TEMOIGNAGES === -->
+    <section id="temoignages">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-label">Témoignages</span>
@@ -260,8 +257,8 @@
                                             <div class="testi-role">Freelance — Data Analyst</div>
                                         </div>
                                     </div>
-                                </div
-                            
+                                </div>
+                            </div>
                             <div class="col-md-4">
                                 <div class="testi-card">
                                     <div class="testi-stars">⭐⭐⭐⭐</div>
@@ -298,7 +295,7 @@
                                     <div class="testi-stars">⭐⭐⭐⭐⭐</div>
                                     <p class="testi-quote">"Nous avons trouvé un expert DevOps en 24h pour un projet critique. Qualité au rendez-vous."</p>
                                     <div class="d-flex align-items-center gap-3 mt-3">
-                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#D48743,#8B4A1A);">IA</div>
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#D48743,#8B4A1A);">MD</div>
                                         <div>
                                             <div class="testi-name">Moustapha DIOP</div>
                                             <div class="testi-role">Entreprise — CTO FinTechCI</div>
@@ -311,7 +308,7 @@
                                     <div class="testi-stars">⭐⭐⭐⭐</div>
                                     <p class="testi-quote">"Excellente expérience. Les profils sont bien vérifiés. Très bonne initiative panafricaine."</p>
                                     <div class="d-flex align-items-center gap-3 mt-3">
-                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#43D4A8,#1A8B62);">EN</div>
+                                        <div class="testi-avatar" style="background:linear-gradient(135deg,#43D4A8,#1A8B62);">OT</div>
                                         <div>
                                             <div class="testi-name">Oumou THIANE</div>
                                             <div class="testi-role">Freelance — Rédactrice Tech</div>
@@ -339,73 +336,73 @@
         </div>
     </section>
 
-    <!-- CTA -->
-     <section id="cta">
-        <div class="conttainer">
+    <!-- === CTA === -->
+    <section id="cta">
+        <div class="container">
             <span class="section-label">Rejoignez-nous</span>
-            <h2>prêt à transformer votre <span>carrière ?</span></h2>
-            <p>Rejoignez +2500 freelances africaons qui tranvaillent avec les meilleures entreprises di continent.</p>
-            <a href="#" class="btn-cta">Rejoindre AfriTalentgratuitement</a>
+            <h2>Prêt à transformer votre <span>carrière ?</span></h2>
+            <p>Rejoignez +2 500 freelances africains qui travaillent avec les meilleures entreprises du continent.</p>
+            <a href="#" class="btn-cta">Rejoindre AfriTalent gratuitement</a>
         </div>
-     </section>
+    </section>
+
 </main>
 
-<!-- FOOTER -->
- <footer>
+<!-- === FOOTER === -->
+<footer>
     <div class="container">
         <div class="row g-4">
-            <!-- COL 1-->
-             <div class="col-lg-3 col-md-6">
+            <!-- Col 1 -->
+            <div class="col-lg-3 col-md-6">
                 <div class="footer-brand">Afri<span>Talent</span></div>
-                <p class="footer-desc">La platefortme qui connectre les talents africains aux meilleures opportunités.</p>
+                <p class="footer-desc">La plateforme qui connecte les talents africains aux meilleures opportunités.</p>
                 <div class="mt-3 d-flex gap-2">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-             </div>
-             <!--COL 2-->
-             <div class="col-lg-3 col-md-6">
+            </div>
+            <!-- Col 2 -->
+            <div class="col-lg-3 col-md-6">
                 <h6 class="footer-title">Liens utiles</h6>
                 <ul class="footer-links">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="freelances.html">Trouvez un freelance</a></li>
-                    <li><a href="tarifs.html">Tarifs & abonnement</a></li>
-                    <li><a href="about.html">A propos de nous</a></li>
+                    <li><a href="freelances.html">Trouver un freelance</a></li>
+                    <li><a href="tarifs.html">Tarifs & abonnements</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
                 </ul>
-             </div>
-             <!--COL 3-->
-             <div class="col-lg-3 col-md-6">
-                <h6 class="footer-title">Ressouces</h6>
+            </div>
+            <!-- Col 3 -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Ressources</h6>
                 <ul class="footer-links">
                     <li><a href="#">Blog AfriTalent</a></li>
-                    <li><a href="#">Guide du freelances</a></li>
+                    <li><a href="#">Guide du freelancing</a></li>
                     <li><a href="#">Centre d'aide (FAQ)</a></li>
                     <li><a href="#">Conditions générales</a></li>
                 </ul>
-             </div>
-             <!--COL4-->
-             <div class="col-lg-3 col-md-6">
+            </div>
+            <!-- Col 4 -->
+            <div class="col-lg-3 col-md-6">
                 <h6 class="footer-title">Contact</h6>
                 <ul class="footer-links">
-                    <li><a href="#">📧contact@afritalent.com</a></li>
-                    <li><a href="#">📞+221 33 123 45 67</a></li>
-                    <li><a href="#">📍Dakar, Sénégal</a></li>
+                    <li><a href="#">📧 contact@afritalent.com</a></li>
+                    <li><a href="#">📞 +221 33 123 45 67</a></li>
+                    <li><a href="#">📍 Dakar, Sénégal</a></li>
                 </ul>
-             </div>
+            </div>
         </div>
-    </div>
- </footer>
-
-<!--Pied de page-->
-<footer>
-    <div class="container py-4">
-        <p>&copy; 2026 AfriTalent, Tous droits reserves.</p>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> AfriTalent. Tous droits réservés.</span>
+            <span>Fait avec ❤️ en Afrique</span>
+        </div>
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css//bootstrap.min.css"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

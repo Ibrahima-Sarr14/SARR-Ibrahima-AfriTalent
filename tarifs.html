@@ -15,6 +15,24 @@
    <!-- CSS perso -->
    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Bouton retour en haut -->
+<button id="btnTop" style="
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:45px;
+    height:45px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:50%;
+    font-size:1.2rem;
+    cursor:pointer;
+    z-index:999;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 15px rgba(255,165,0,0.4);">↑</button>
 <body>
 
 <!-- === NAVBAR === -->
@@ -46,6 +64,10 @@
            </div>
        </div>
    </nav>
+   <!-- Bouton dark mode -->
+    <li class="nav-item ms-2">
+        <button id="darkModeBtn" class="btn btn-outline-secondary btn-sm">🌙</button>
+    </li>
 </header>
 
 <main>

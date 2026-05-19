@@ -7,20 +7,17 @@
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- CSS perso -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -32,8 +29,8 @@
     right:30px;
     width:45px;
     height:45px;
-    background:orange;
-    color:white;
+    background:rgb(0, 255, 170);
+    color:rgb(207, 27, 27);
     border:none;
     border-radius:50%;
     font-size:1.2rem;
@@ -43,56 +40,40 @@
     justify-content:center;
     box-shadow:0 4px 15px rgba(255,165,0,0.4);">↑</button>
   <body>
-      <!-- === NAVBAR === -->
-      <header>
-        <navclass="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-          id="mainNav">
-          <div class="container">
+ <!-- === NAVBAR === -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-              <img
-                src="images/AfriTalent log .jpeg"
-                alt="Logo AfriTalent"
-                height="50"/>
+                <img src="images/AfriTalent log .jpeg" alt="Logo AfriTalent" height="50">
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navMenu"
-              aria-controls="navMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
-              <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="freelances.html">Freelances</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tarifs.html">Tarifs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="about.html">À propos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item ms-3">
-                  <a href="#" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!-- Bouton dark mode -->
+                    <li class="nav-item ms-2">
+                        <button id="darkModeBtn" class="btn btn-outline-secondary btn-sm">🌙</button>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </nav>
-        <!-- Bouton dark mode -->
-        <li class="nav-item ms-2">
-            <button id="darkModeBtn" class="btn btn-outline-secondary btn-sm">🌙</button>
-        </li>
-      </header>
+        </div>
+    </nav>
+</header>
 
       <main>
         <!-- === NOTRE HISTOIRE === -->
@@ -303,67 +284,55 @@
       </main>
 
       <!-- === FOOTER === -->
-      <footer>
-        <div class="container">
-          <div class="row g-4">
-            <!-- Col 1 -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
             <div class="col-lg-3 col-md-6">
-              <div class="footer-brand">Afri<span>Talent</span></div>
-              <p class="footer-desc">
-                La plateforme qui connecte les talents africains aux meilleures
-                opportunités.
-              </p>
-              <div class="mt-3 d-flex gap-2">
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
+              <a class="navbar-brand" href="index.html">
+                <img src="images/AfriTalent log .jpeg" alt="Logo AfriTalent" height="50">
+              </a>
+                <div class="footer-brand">Afri<span>Talent</span></div>
+                <p class="footer-desc">La plateforme qui connecte les talents africains aux meilleures opportunités.</p>
+                <div class="mt-3 d-flex gap-2">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <!-- Col 2 -->
             <div class="col-lg-3 col-md-6">
-              <h6 class="footer-title">Liens utiles</h6>
-              <ul class="footer-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="freelances.html">Trouver un freelance</a></li>
-                <li><a href="tarifs.html">Tarifs & abonnements</a></li>
-                <li><a href="about.html">À propos de nous</a></li>
-              </ul>
+                <h6 class="footer-title">Liens utiles</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Trouver un freelance</a></li>
+                    <li><a href="tarifs.html">Tarifs & abonnements</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                </ul>
             </div>
-            <!-- Col 3 -->
             <div class="col-lg-3 col-md-6">
-              <h6 class="footer-title">Ressources</h6>
-              <ul class="footer-links">
-                <li><a href="#">Blog AfriTalent</a></li>
-                <li><a href="#">Guide du freelancing</a></li>
-                <li><a href="#">Centre d'aide (FAQ)</a></li>
-                <li><a href="#">Conditions générales</a></li>
-              </ul>
+                <h6 class="footer-title">Ressources</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Blog AfriTalent</a></li>
+                    <li><a href="#">Guide du freelancing</a></li>
+                    <li><a href="#">Centre d'aide (FAQ)</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                </ul>
             </div>
-            <!-- Col 4 -->
             <div class="col-lg-3 col-md-6">
-              <h6 class="footer-title">Contact</h6>
-              <ul class="footer-links">
-                <li><a href="#">📧 contact@afritalent.com</a></li>
-                <li><a href="#">📞 +221 33 123 45 67</a></li>
-                <li><a href="#">📍 Dakar, Sénégal</a></li>
-              </ul>
+                <h6 class="footer-title">Contact</h6>
+                <ul class="footer-links">
+                    <li><a href="#">📧 contact@afritalent.com</a></li>
+                    <li><a href="#">📞 +221 33 123 45 67</a></li>
+                    <li><a href="#">📍 Dakar, Sénégal</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="footer-bottom">
-            <span
-              >© <span id="year"></span> AfriTalent. Tous droits réservés.</span
-            >
-            <span>Fait avec ❤️ en Afrique</span>
-          </div>
         </div>
-      </footer>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> AfriTalent. Tous droits réservés.</span>
+            <span>Fait avec ❤️ en Afrique</span>
+        </div>
+    </div>
+</footer>
 
       <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

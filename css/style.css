@@ -1,8 +1,14 @@
-/* ==VARIABLES CSS ==*/
-:root{
-    --couleur-primaire:#FFA500;
-    --couleur-sombre:#0D0D0D;
-    --couleur-fond:#F8F9FA;
+/* ============================================
+   AFRITALENT — style.css
+   Auteur : SARR Ibrahima
+   Date : 2026
+============================================ */
+
+/* ── VARIABLES CSS (minimum 6) ── */
+:root {
+    --couleur-primaire: #FFA500;
+    --couleur-sombre: #0D0D0D;
+    --couleur-fond: #F8F9FA;
     --couleur-texte: #1A1A1A;
     --couleur-muted: #666666;
     --couleur-blanc: #FFFFFF;
@@ -10,39 +16,39 @@
     --transition: all 0.3s ease;
 }
 
-/* == BASE ==*/
-*{
+/* ── BASE ── */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'DM Sans', sans-serif;
     color: var(--couleur-texte);
     background: var(--couleur-blanc);
 }
 
-h1, h2, h3{
-    font-family: 'PlayFair Display', serif;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
-/* -- NAVBAR --*/
-.navbar-brand img{
+
+/* ── NAVBAR ── */
+.navbar-brand img {
     width: 80px;
     height: auto;
 }
 
-.nav-link{
+.nav-link {
     font-size: 0.9rem;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 .nav-link:hover {
-    color:var(--couleur-primaire) !important;
+    color: var(--couleur-primaire) !important;
 }
 
-/* -- HERO*/
 /* ── HERO ── */
 #hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
@@ -98,6 +104,11 @@ h1, h2, h3{
     animation: float 4s ease-in-out infinite;
 }
 
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-15px); }
+}
+
 /* ── SECTION LABELS ── */
 .section-label {
     background: rgba(255, 165, 0, 0.12);
@@ -146,6 +157,11 @@ h1, h2, h3{
 
 /* ── BENTO GRID ── */
 #how {
+    padding: 5rem 0;
+    background: var(--couleur-fond);
+}
+
+#chiffres {
     padding: 5rem 0;
     background: var(--couleur-fond);
 }
@@ -220,13 +236,13 @@ h1, h2, h3{
     opacity: 1;
 }
 
-/* -- CATEGORIES __*/
+/* ── CATEGORIES ── */
 #services {
     padding: 5rem 0;
     background: var(--couleur-blanc);
 }
 
-.cat-card{
+.cat-card {
     background: var(--couleur-fond);
     border: 1.5px solid #eee;
     border-radius: 16px;
@@ -236,34 +252,35 @@ h1, h2, h3{
     transition: var(--transition);
 }
 
-.cat-card:hover{
+.cat-card:hover {
     border-color: var(--couleur-primaire);
     transform: translateY(-6px);
     box-shadow: 0 15px 40px rgba(255, 165, 0, 0.2);
 }
 
-.cat-icon{
+.cat-icon {
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
 
-.cat-title{
+.cat-title {
     font-weight: 700;
     font-size: 0.88rem;
     margin-bottom: 0.3rem;
 }
 
-.cat-count{
+.cat-count {
     font-size: 0.75rem;
     color: var(--couleur-muted);
 }
-/*-- TEMOIGNAGES*/
+
+/* ── TEMOIGNAGES ── */
 #temoignages {
     padding: 5rem 0;
     background: var(--couleur-fond);
 }
 
-.testi-card{
+.testi-card {
     background: var(--couleur-blanc);
     border: 1px solid #eee;
     border-radius: 16px;
@@ -271,75 +288,76 @@ h1, h2, h3{
     height: 100%;
 }
 
-.testi-starts{
+.testi-stars {
     color: var(--couleur-primaire);
     margin-bottom: 0.8rem;
 }
 
-.testi-quote{
+.testi-quote {
     font-style: italic;
     color: #444;
     font-size: 0.9rem;
     line-height: 1.7;
 }
 
-.testi-avatar{
+.testi-avatar {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     font-weight: 700;
     font-size: 0.9rem;
     flex-shrink: 0;
 }
 
-.testi-name{
+.testi-name {
     font-weight: 700;
     font-size: 0.88rem;
 }
 
-.testi-role{
+.testi-role {
     font-size: 0.75rem;
     color: var(--couleur-muted);
 }
 
-.carasoul-indicators button{
+.carousel-indicators button {
     width: 8px !important;
     height: 8px !important;
     border-radius: 50% !important;
     background-color: #ccc !important;
 }
 
-.carasoul-indicators .active{
+.carousel-indicators .active {
     background-color: var(--couleur-primaire) !important;
 }
 
-/* -- CTA --*/
-#cta{
+/* ── CTA ── */
+#cta {
     background: linear-gradient(135deg, #1A0E00 0%, #3D2800 50%, #5C3A00 100%);
     padding: 6rem 0;
     text-align: center;
 }
 
-#cta h2{
+#cta h2 {
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 800;
     color: white;
     margin: 1rem 0 0.5rem;
 }
 
-#cta h2 span{
+#cta h2 span {
     color: var(--couleur-primaire);
 }
 
-#cta p{
+#cta p {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 2rem;
 }
 
-.btn-cta{
+.btn-cta {
     background: var(--couleur-primaire);
     color: white;
     border: none;
@@ -352,37 +370,37 @@ h1, h2, h3{
     display: inline-block;
 }
 
-.btn-cta:hover{
+.btn-cta:hover {
     background: #e69500;
     transform: translateY(-2px);
     color: white;
 }
 
-/* -- FOOTER --*/
-footer{
+/* ── FOOTER ── */
+footer {
     background: var(--couleur-sombre);
     color: rgba(255, 255, 255, 0.6);
     padding: 4rem 0 1.5rem;
 }
 
-.footer-brand{
+.footer-brand {
     font-size: 1.6rem;
     font-weight: 900;
-    color:white;
+    color: white;
 }
 
-.footer-brand span{
+.footer-brand span {
     color: var(--couleur-primaire);
 }
 
-.footer-desc{
+.footer-desc {
     font-size: 0.85rem;
-    color: rgba( 255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.45);
     margin-top: 0.8rem;
     max-width: 220px;
 }
 
-.footer-title{
+.footer-title {
     color: white;
     font-size: 0.82rem;
     font-weight: 700;
@@ -391,7 +409,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.footer-links{
+.footer-links {
     list-style: none;
     padding: 0;
 }
@@ -400,82 +418,82 @@ footer{
     margin-bottom: 0.5rem;
 }
 
-.footer-links a{
-     color: rgba( 255, 255, 255, 0.5);
-     text-decoration: none;
-     font-size: 0.875rem;
-     transition: color 0.2s;
+.footer-links a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
 }
 
-.footer-link a:hover{
+.footer-links a:hover {
     color: var(--couleur-primaire);
 }
 
-.social-icon{
+.social-icon {
     width: 34px;
     height: 34px;
-    border: 1px solid  rgba( 255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba( 255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     font-size: 0.8rem;
     transition: var(--transition);
 }
 
-.social-icon:hover{
+.social-icon:hover {
     border-color: var(--couleur-primaire);
     color: var(--couleur-primaire);
 }
 
-.footer-bottom{
-    border-bottom: 1px solid rgba( 255, 255, 255, 0.07);
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
     padding-top: 1.5rem;
     margin-top: 3rem;
     font-size: 0.8rem;
-    color: rgba( 255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-/* -- PAGE TARIFS -- */
-#tarifs-hero{
-    padding: 3rem 0 2rem;
+/* ── PAGE TARIFS ── */
+#tarifs-hero {
+    padding: 4rem 0 2rem;
     background: var(--couleur-fond);
     text-align: center;
 }
 
-#plans{
+#plans {
     padding: 3rem 0 5rem;
     background: var(--couleur-fond);
 }
 
-.plan-card{
+.plan-card {
     background: var(--couleur-blanc);
     border: 1.5px solid #eee;
-    border-radius: var(--couleur-radius);
+    border-radius: var(--border-radius);
     padding: 2rem;
     text-align: center;
     height: 100%;
     transition: var(--transition);
 }
 
-.plan-card:hover{
+.plan-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 40px  rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.plan-populaire{
+.plan-populaire {
     border: 2.5px solid var(--couleur-primaire);
     transform: scale(1.05);
-    box-shadow: 0 20px 50px  rgba( 255, 165, 255, 0.25);
+    box-shadow: 0 20px 50px rgba(255, 165, 0, 0.25);
 }
 
-.badge-populaire{
+.badge-populaire {
     background: var(--couleur-primaire);
     color: white;
     border-radius: 50px;
@@ -486,58 +504,59 @@ footer{
     margin-bottom: 1rem;
 }
 
-.plan-nom{
+.plan-nom {
     font-size: 1.3rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
 
-.plan-prix{
+.plan-prix {
     font-size: 2rem;
     font-weight: 900;
-    color: var(--couleur-muted);
+    color: var(--couleur-primaire);
     margin-bottom: 1.5rem;
 }
 
-.plan-prix span{
+.plan-prix span {
     font-size: 0.9rem;
     color: var(--couleur-muted);
     font-weight: 400;
 }
 
-.plan-feactures{
+.plan-features {
     list-style: none;
     padding: 0;
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.plan-feactures li{
+.plan-features li {
     padding: 0.4rem 0;
     font-size: 0.88rem;
     border-bottom: 1px solid #f0f0f0;
 }
 
-#faq{
+#faq {
     padding: 5rem 0;
     background: var(--couleur-blanc);
 }
 
-.accordion-button:not(.collapsed){
-    background:rgba( 255, 165, 0, 0.1);
+.accordion-button:not(.collapsed) {
+    background: rgba(255, 165, 0, 0.1);
     color: var(--couleur-primaire);
 }
-.accordion-button:focus{
-    box-shadow: 0 0 0 0.2rem rgba( 255, 165, 0, 0.25);;
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
 }
 
-/* -- PAGE FREELANCES --*/
-#filtres{
+/* ── PAGE FREELANCES ── */
+#filtres {
     padding: 4rem 0 2rem;
     background: var(--couleur-fond);
 }
 
-.btn-filtre{
+.btn-filtre {
     background: var(--couleur-blanc);
     border: 1.5px solid #eee;
     border-radius: 50px;
@@ -569,17 +588,20 @@ footer{
     text-align: center;
     transition: var(--transition);
     height: 100%;
+    overflow: hidden;
 }
 
-
-.freelance-card img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.freelance-card img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    margin: 0 auto 1rem;
+    object-position: top;
+    border-radius: 12px 12px 0 0;
+    margin: -2rem -2rem 1rem -2rem;
     display: block;
+    width: calc(100% + 4rem);
 }
+
 .freelance-card:hover {
     border-color: var(--couleur-primaire);
     transform: translateY(-6px);
@@ -791,28 +813,6 @@ footer{
     color: var(--couleur-muted);
     margin-bottom: 0.8rem;
 }
-.contact-section {
-  background-color: #f8f9fa;
-}
-
-.contact-section h2,
-.contact-section h3 {
-  font-weight: bold;
-}
-
-.form-control,
-.form-select {
-  border-radius: 10px;
-}
-
-.btn-primary {
-  padding: 10px 25px;
-  border-radius: 10px;
-}
-
-.alert-success {
-  border-radius: 10px;
-}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1200px) {
@@ -858,4 +858,3 @@ footer{
         font-size: 1.5rem;
     }
 }
-

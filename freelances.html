@@ -15,6 +15,24 @@
     <!-- CSS perso -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Bouton retour en haut -->
+<button id="btnTop" style="
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:45px;
+    height:45px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:50%;
+    font-size:1.2rem;
+    cursor:pointer;
+    z-index:999;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 15px rgba(255,165,0,0.4);">↑</button>
 <body>
 
 <!-- === NAVBAR === -->
@@ -38,7 +56,6 @@
                     <li class="nav-item"><a class="nav-link active" href="freelances.html">Freelances</a></li>
                     <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <!-- Bouton dark mode -->
                     <li class="nav-item ms-2">
@@ -144,7 +161,7 @@
                 <!-- Carte 5 -->
                 <div class="col-12 col-md-6 col-lg-4" data-categorie="redaction">
                     <div class="freelance-card">
-                        <img src="images/redaction tech.jpg" alt="Rédaction Tech">
+                        <img src="images/redaction tech.png" alt="Rédaction Tech">
                         <h5 class="freelance-nom">Thioro SARR</h5>
                         <p class="freelance-specialite">Rédaction Tech</p>
                         <p class="freelance-bio">Rédactrice technique bilingue, spécialisée en documentation et articles tech.</p>
@@ -172,14 +189,14 @@
                 </div>
 
                 <!-- Carte 7 -->
-                <div class="col-12 col-md-6 col-lg-4" data-categorie="dev">
+                <div class="col-12 col-md-6 col-lg-4" data-categorie="cybersecurity">
                     <div class="freelance-card">
-                        <img src="images/dev web.webp" alt="Développement Web">
-                        <h5 class="freelance-nom">Ibrahima BALDE</h5>
-                        <p class="freelance-specialite">Développement Web</p>
-                        <p class="freelance-bio">Développeur frontend spécialisé en Vue.js et animations CSS avancées.</p>
+                        <img src="images/cybersecurity.png" alt="Cybersecurité">
+                        <h5 class="freelance-nom">Cheikh GUEYE</h5>
+                        <p class="freelance-specialite">Cybersecurité</p>
+                        <p class="freelance-bio">Expert en sécurité informatique et protection des données.</p>
                         <div class="freelance-info">
-                            <span class="freelance-tarif">💰 22 000 FCFA/h</span>
+                            <span class="freelance-tarif">💰 30 000 FCFA/h</span>
                             <span class="freelance-note">⭐⭐⭐⭐</span>
                         </div>
                         <button class="btn btn-outline-warning w-100 mt-3">Voir le profil</button>
@@ -187,12 +204,12 @@
                 </div>
 
                 <!-- Carte 8 -->
-                <div class="col-12 col-md-6 col-lg-4" data-categorie="design">
+                <div class="col-12 col-md-6 col-lg-4" data-categorie="reseaux">
                     <div class="freelance-card">
-                        <img src="images/Designer.avif" alt="Design UI/UX">
-                        <h5 class="freelance-nom">Mariama NIASS</h5>
-                        <p class="freelance-specialite">Design UI/UX</p>
-                        <p class="freelance-bio">Designer UX spécialisée en recherche utilisateur et prototypage Figma.</p>
+                        <img src="images/reseaux.png" alt="Réseaux ">
+                        <h5 class="freelance-nom">Fatou DIENG</h5>
+                        <p class="freelance-specialite">Réseaux & Infrastructurers</p>
+                        <p class="freelance-bio">Experte en administration réseau et cloud hybride.</p>
                         <div class="freelance-info">
                             <span class="freelance-tarif">💰 28 000 FCFA/h</span>
                             <span class="freelance-note">⭐⭐⭐⭐⭐</span>

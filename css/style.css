@@ -49,14 +49,39 @@ h1, h2, h3 {
     color: var(--couleur-primaire) !important;
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 10, 25, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+}
+
+body{
+    padding-top: 90px;
+}
 /* ── HERO ── */
 #hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    background-image: url('../images/afritalent\ image.jpeg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
     min-height: 90vh;
     display: flex;
     align-items: center;
     padding: 4rem 0;
     position: relative;
+}
+
+#hero::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
 }
 
 #hero h1 {
@@ -857,4 +882,71 @@ footer {
     .plan-prix {
         font-size: 1.5rem;
     }
+}
+
+/* ── DARK MODE ── */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+    background: #1a1a1a !important;
+}
+
+body.dark-mode .testi-card,
+body.dark-mode .freelance-card,
+body.dark-mode .plan-card,
+body.dark-mode .cat-card,
+body.dark-mode .valeur-card,
+body.dark-mode .membre-card,
+body.dark-mode .bento-card.light,
+body.dark-mode .contact-infos {
+    background: #1e1e1e;
+    border-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode #statistiques,
+body.dark-mode #services,
+body.dark-mode #histoire,
+body.dark-mode #valeurs,
+body.dark-mode #contact-form,
+body.dark-mode #faq,
+body.dark-mode #tarifs-hero {
+    background: #121212;
+}
+
+body.dark-mode #temoignages,
+body.dark-mode #how,
+body.dark-mode #filtres,
+body.dark-mode #catalogue,
+body.dark-mode #equipe,
+body.dark-mode #chiffres,
+body.dark-mode #plans,
+body.dark-mode #contact-hero {
+    background: #1a1a1a;
+}
+
+body.dark-mode .testi-quote,
+body.dark-mode .freelance-bio,
+body.dark-mode .bento-desc,
+body.dark-mode .valeur-desc,
+body.dark-mode .contact-infos p {
+    color: #aaa;
+}
+
+body.dark-mode .accordion-item {
+    background: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode .accordion-button {
+    background: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode .accordion-body {
+    background: #1e1e1e;
+    color: #aaa;
 }

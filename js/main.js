@@ -21,6 +21,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // ── 3. DARK MODE avec localStorage
 const darkBtn = document.getElementById('darkModeBtn');
 
@@ -43,6 +44,7 @@ if (darkBtn) {
         }
     });
 }
+
 
 // ── 4. BOUTON RETOUR EN HAUT
 const btnTop = document.getElementById('btnTop');

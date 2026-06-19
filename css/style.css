@@ -55,7 +55,7 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(10, 10, 25, 0.95);
+    background: #1a1a2e !important;
     backdrop-filter: blur(10px);
     padding: 15px 40px;
 }
@@ -82,6 +82,11 @@ body{
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
     z-index: 0;
+}
+
+#hero .container{
+    position: relative;
+    z-index: 1;
 }
 
 #hero h1 {
